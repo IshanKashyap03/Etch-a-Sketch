@@ -5,8 +5,6 @@
 #container{
     display: flex;
     flex-wrap: wrap;
-    /* 27(each child div = 25 + 2px for border) * 16 */
-    width: 432px;
 }
 
 #container>div{
@@ -19,4 +17,8 @@
     width: 100%;
     border: 0;
     height: 0;
-  }
+}
+
+.hovered {
+    background-color: blue; /* Color when hovered */
+}
