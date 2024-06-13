@@ -2,23 +2,34 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the button and container horizontally */
+    height: 100vh;
+    margin: 10px;
+    gap: 10px;
+}
+
 #container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-#container>div{
+.squares{
     border: 1px solid black;
     height: 25px;
     width: 25px;
 }
 
-#container>div:nth-child(16n + 1) {
-    width: 100%;
-    border: 0;
-    height: 0;
-}
-
 .hovered {
     background-color: blue; /* Color when hovered */
 }
+
+#btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
